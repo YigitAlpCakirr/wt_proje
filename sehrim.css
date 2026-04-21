@@ -1,0 +1,35 @@
+.samsunyazi{
+    font-size: 100px;
+    font-family: "Brush Script MT", cursive;
+    font-weight: bolder;
+}
+
+.sayfaalt{
+    background-image: url(Resimler/atakumarka.png);
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.samsunyazi1{
+    font-size: 30px;
+    font-family: "Brush Script MT", serif;
+    font-weight: lighter;
+}
+
+.hapyazi{
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.bg1{
+    background-color: rgb(218, 212, 226);
+}
+
+
+.gezilecekyer img{
+    height: 130px;
+}

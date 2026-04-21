@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Şehrim | Samsun</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="still.css">
+    <script src="slider.js" defer></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img class="img-fluid logo" src="Resimler/logo2.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Anasayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkimda.html">Özgeçmişim</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="sehrim.html">Şehrim</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ilgialanlarim.html">İlgi Alanlarım</a></li>
+                    <li class="nav-item"><a class="nav-link" href="mirasimiz.html">Mirasımız</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletisim.html">İletişim</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid d-flex align-items-center justify-content-center flex-column text-white text-center" 
+         style="height: 60vh; background: url('Resimler/atakumarka.png') center/cover fixed; margin-top: 0;">
+        <div style="background: rgba(0,0,0,0.5); width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <h1 class="display-1 fw-bold" data-aos="zoom-in">SAMSUN</h1>
+            <p class="fs-3" data-aos="fade-up">Kurtuluşun Şehri, Karadeniz'in İncisi</p>
+        </div>
+    </div>
+
+    <div class="container my-5" data-aos="fade-up">
+        <div class="alert alert-info border-0 shadow-sm" role="alert">
+            <h4 class="alert-heading"><i class="fa-solid fa-circle-info"></i> Hap Bilgi</h4>
+            <p class="mb-0">Samsun, Karadeniz'in eğitim, sağlık ve ticaret merkezidir. Atatürk'ün 19 Mayıs 1919'da ayak basarak Milli Mücadele'yi başlattığı yerdir.</p>
+        </div>
+    </div>
+
+<div class="container mb-5" data-aos="fade-up">
+        <h2 class="sayfa-baslik text-center">Gezilecek Yerler Galerisi</h2>
+        
+        <div class="slider-container">
+            <div class="slide slider-fade" style="display: block;">
+                <div class="number">1 / 7</div>
+                <img src="Resimler/onuranıtı.png" class="slide-image" alt="Onur Anıtı" />
+                <div class="slide-text">Onur Anıtı</div>
+            </div>
+            
+            <div class="slide slider-fade">
+                <div class="number">2 / 7</div>
+                <img src="Resimler/atakum.png" class="slide-image" alt="Atakum" />
+                <div class="slide-text">Atakum Sahili</div>
+            </div>
+
+             <div class="slide slider-fade">
+                <div class="number">3 / 7</div>
+                <img src="Resimler/ayvacık.png" class="slide-image" alt="Ayvacık" />
+                <div class="slide-text">Ayvacık</div>
+            </div>
+
+             <div class="slide slider-fade">
+                <div class="number">4 / 7</div>
+                <img src="Resimler/bandırma.png" class="slide-image" alt="Bandırma Vapuru" />
+                <div class="slide-text">Bandırma Vapuru</div>
+            </div>
+
+            <div class="slide slider-fade">
+                <div class="number">5 / 7</div>
+                <img src="Resimler/batıpark.png" class="slide-image" alt="Batı Park" />
+                <div class="slide-text">Batı Park</div>
+            </div>
+
+            <div class="slide slider-fade">
+                <div class="number">6 / 7</div>
+                <img src="Resimler/gazimüzesi.png" class="slide-image" alt="Gazi Müzesi" />
+                <div class="slide-text">Gazi Müzesi</div>
+            </div>
+
+            <div class="slide slider-fade">
+                <div class="number">7 / 7</div>
+                <img src="Resimler/sevgigölü.png" class="slide-image" alt="Sevgi Gölü" />
+                <div class="slide-text">Sevgi Gölü</div>
+            </div>
+            
+            <a class="prev" onclick="slideRoute(-1)">&#10094;</a>
+            <a class="next" onclick="slideRoute(1)">&#10095;</a>
+        </div>
+        
+        <div class="dot-container">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+    </div>
+
+
+    <div class="container mb-5">
+        <h2 class="sayfa-baslik text-center">Detaylı Rehber</h2>
+        
+        <div class="modern-card" data-aos="fade-right">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Resimler/onuranıtı.png" class="img-fluid rounded w-100" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3>Onur Anıtı</h3>
+                    <p>Samsun'un simgesi. Şahlanan at üzerindeki Atatürk heykeli, kurtuluş mücadelesinin en güçlü sembolüdür.</p>
+                    <a href="https://maps.app.goo.gl/cQ81RVzLEYHTMCLcA" target="_blank" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-map-pin"></i> Haritada Gör</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modern-card" data-aos="fade-left">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="Resimler/bandırma.png" class="img-fluid rounded w-100" alt="">
+                </div>
+                <div class="col-md-8">
+                    <h3>Bandırma Vapuru</h3>
+                    <p>Milli Mücadele'nin başladığı vapurun birebir replikası. İçerisinde balmumu heykelleri ve tarihi belgeler bulunur.</p>
+                    <a href="https://maps.app.goo.gl/5FVRyi5YAercMiz18" target="_blank" class="btn btn-sm btn-outline-danger"><i class="fa-solid fa-map-pin"></i> Haritada Gör</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <footer class="footer text-center"><p>&copy; 2024 Samsun Rehberi.</p></footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
