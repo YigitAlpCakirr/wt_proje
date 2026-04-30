@@ -101,7 +101,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script>
-        // NATIVE JAVASCRIPT DOĞRULAMASI
+
         function validateNative() {
             const ad = document.getElementById('ad').value.trim();
             const email = document.getElementById('email').value.trim();
@@ -115,14 +115,12 @@
             hataKutusu.id = 'hataKutusu';
             hataKutusu.className = 'alert alert-danger mt-3';
 
-            // Boş alan kontrolü
             if(!ad || !email || !telefon || !konu || !mesaj || !cinsiyet) {
                 hataKutusu.innerText = "Lütfen tüm alanları doldurunuz (Native JS Kontrolü).";
                 document.getElementById('iletisimForm').prepend(hataKutusu);
                 return;
             }
 
-            // Email Format Kontrolü
             const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             if(!emailRegex.test(email)) {
                 hataKutusu.innerText = "Geçerli bir E-posta adresi giriniz (Native JS Kontrolü).";
@@ -144,11 +142,9 @@
                 return;
             }
 
-            // Hata yoksa formu gönder
             document.getElementById('iletisimForm').submit();
         }
 
-        // VUE.JS DOĞRULAMASI
         const { createApp } = Vue;
 
         createApp({
