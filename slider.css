@@ -38,7 +38,6 @@
     to {opacity: 1}
 }
 
-/* İleri - Geri Butonları */
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -65,7 +64,6 @@
     background-color: rgba(0,0,0,0.8);
 }
 
-/* Resim Üzerindeki Yazı */
 .slide-text {
     color: #f2f2f2;
     font-size: 16px;
@@ -78,19 +76,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* Sol Üstteki Numara */
-.number {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    border-bottom-right-radius: 10px;
-}
 
-/* Alt Noktalar */
 .dot-container {
     text-align: center;
     padding: 15px;
@@ -117,3 +103,4 @@
     .slide-image { height: 300px; } 
     .slider-container { width: 95%; }
 }
+
