@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = isset($_POST['email']) ? trim($_POST['email']) : '';
     $sifre = isset($_POST['sifre']) ? trim($_POST['sifre']) : '';
@@ -14,7 +16,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Şifre tam olarak öğrenci numarasına eşit mi kontrolü
         if ($sifre === $ogrenciNo) {
-            // Başarılı giriş
+            // Başarılı giriş - Session'a kaydet
+            $_SESSION['user'] = $ogrenciNo;
+            
             ?>
             <!DOCTYPE html>
             <html lang="tr">
