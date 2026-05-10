@@ -10,13 +10,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit();
     }
 
-    // Email'in sakarya.edu.tr ile bitip bitmediğini ve öğrenci numarasını çıkartmayı deneyelim
+    
     if (preg_match('/^([a-zA-Z0-9]+)@sakarya\.edu\.tr$/', $email, $matches)) {
         $ogrenciNo = $matches[1];
 
-        // Şifre tam olarak öğrenci numarasına eşit mi kontrolü
+        
         if ($sifre === $ogrenciNo) {
-            // Başarılı giriş - Session'a kaydet
+            
             $_SESSION['user'] = $ogrenciNo;
             
             ?>
@@ -65,21 +65,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </body>
             </html>
             <?php
-            // Başarılı olursa 3 saniye sonra anasayfaya yönlendirebiliriz
+            
             header("refresh:4;url=index.html");
             exit();
         } else {
-            // Şifre yanlış
+            
             header("Location: login.html?error=wrong");
             exit();
         }
     } else {
-        // Mail formatı sakarya.edu.tr değil
+        
         header("Location: login.html?error=invalid_format");
         exit();
     }
 } else {
-    // POST dışında bir istekle gelinirse login'e at
+   
     header("Location: login.html");
     exit();
 }

@@ -1,5 +1,4 @@
-# .html uzantılı dosyalarda PHP kodlarının çalışmasını sağlar
+
 AddType application/x-httpd-php .html
 
-# Alternatif (eğer üstteki çalışmazsa bunu deneyin):
-# AddHandler application/x-httpd-php .html
+
