@@ -1,6 +1,6 @@
 # Web Teknolojileri Projesi - Kişisel Portfolyo
 
-Bu proje, Sakarya Üniversitesi Web Teknolojileri dersi kapsamında hazırlanmış bir kişisel web sitesidir. Site; hakkımda bilgiler, şehrim (Samsun), kültürel mirasımız ve dinamik bir iletişim formu gibi çeşitli bölümlerden oluşmaktadır.
+Bu proje, Sakarya Üniversitesi Web Teknolojileri dersi kapsamında hazırlanmış bir kişisel web sitesidir. Site; hakkımda bilgiler, şehrim, kültürel mirasımız ve dinamik bir iletişim formu gibi çeşitli bölümlerden oluşmaktadır.
 
 ## 🚀 Canlı Önizleme
 Projeye şu adresten ulaşabilirsiniz: **[https://yigitalp.rf.gd](https://yigitalp.rf.gd)**
@@ -42,4 +42,4 @@ Projeyi yerel bilgisayarınızda çalıştırmak için:
 
 ---
 **Hazırlayan:** Yiğit Alp Çakır  
-**Öğrenci No:** B2412100001
+**Öğrenci No:** G231210387
